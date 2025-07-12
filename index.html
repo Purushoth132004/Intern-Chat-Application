@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Chat</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Enter Your Username</h2>
+    <input type="text" id="username" placeholder="Enter username" required />
+    <button onclick="joinChat()">Join Chat</button>
+  </div>
+
+  <script>
+    function joinChat() {
+      const username = document.getElementById("username").value.trim();
+      if (username.length === 0) {
+        alert("Username cannot be empty!");
+        return;
+      }
+      localStorage.setItem("username", username);
+      window.location.href = "chat.html";
+    }
+  </script>
+</body>
+</html>
