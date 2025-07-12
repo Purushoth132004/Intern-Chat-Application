@@ -1,0 +1,33 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <aside class="rooms">
+      <h3>Rooms</h3>
+      <ul id="room-list"></ul>
+      <input id="new-room" placeholder="New Room Name" />
+      <button onclick="createRoom()">Create Room</button>
+    </aside>
+
+    <main class="chat-box">
+      <div class="chat-header">
+        <h3 id="current-room">Select a Room</h3>
+        <button onclick="logout()">Logout</button>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="message-input">
+        <input id="message-input" placeholder="Type a message" />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
