@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Chat Room</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <div class="chat-container">
     <aside class="rooms">
-      <h3>Rooms</h3>
-      <ul id="room-list"></ul>
+      <h3>Create a New Room</h3>
+      <div>
       <input id="new-room" placeholder="New Room Name" />
       <button onclick="createRoom()">Create Room</button>
+      </div>
+      <h3>Join An Exsisting Room</h3>
+      <ul id="room-list"></ul>
+      
     </aside>
 
     <main class="chat-box">
