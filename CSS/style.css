@@ -43,11 +43,29 @@ body {
 .chat-header {
   background: #222;
   color: white;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
+.chat-header h3{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.chat-header button{
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 10px ;
+}
+
+.chat-header button:hover{
+  background-color:black;
+  color: white;
+  box-shadow: white;
+}
 .messages {
   flex: 1;
   padding: 10px;
@@ -72,3 +90,28 @@ body {
   color: white;
   border: none;
 }
+
+.rooms input {
+  font-size: 20px;
+  border-color: aliceblue;
+  border-radius: 10px;
+  width: 300px;
+  padding: 8px 9px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.rooms button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  margin-left: 100px;
+  display: inline;
+}
+
+
+
+
