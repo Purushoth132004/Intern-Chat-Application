@@ -57,10 +57,21 @@ function sendMessage() {
 function addMessageToChat(msg) {
   const messageEl = document.createElement("div");
   messageEl.className = "message";
-  messageEl.innerHTML = `<strong>${msg.username}</strong> <span class="timestamp">${formatTime(msg.timestamp)}</span><br>${msg.content}`;
+
+  messageEl.innerHTML = `
+    <div class="message-bubble">
+      <div class="message-meta">
+        <strong>${msg.username}</strong>
+        <span class="timestamp">${formatTime(msg.timestamp)}</span>
+      </div>
+      <div class="message-text">${msg.content}</div>
+    </div>
+  `;
+
   messagesContainer.appendChild(messageEl);
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
+
 
 function addNotification(text) {
   const note = document.createElement("div");

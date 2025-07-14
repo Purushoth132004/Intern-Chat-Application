@@ -82,6 +82,8 @@ body {
   flex: 1;
   padding: 10px;
   border: none;
+  height: 40px;
+  font-size: 20px;
 }
 
 .message-input button {
@@ -89,6 +91,7 @@ body {
   background: #007bff;
   color: white;
   border: none;
+  font-size: 20px;
 }
 
 .rooms input {
@@ -111,6 +114,34 @@ body {
   margin-left: 100px;
   display: inline;
 }
+
+.message {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  background: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  max-width: 70%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  color: #222;
+  word-wrap: break-word;
+}
+
 
 
 
